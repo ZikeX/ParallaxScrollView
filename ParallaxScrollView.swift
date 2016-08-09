@@ -51,7 +51,7 @@ class ParallaxScrollView: UIScrollView, UIScrollViewDelegate, UIGestureRecognize
         self.init(frame: .zero)
     }
     
-    convenience init(frame:CGRect, parallaxHeader: ParallaxHeaderController, delegate: ParallaxScrollViewDelegate) {
+    convenience init(frame: CGRect, parallaxHeader: ParallaxHeaderController, delegate: ParallaxScrollViewDelegate?) {
         self.init(frame: frame, parallaxHeader: parallaxHeader)
         self.delegate = delegate
     }
